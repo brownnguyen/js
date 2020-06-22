@@ -1,0 +1,16 @@
+.topTitle{
+    padding: 100px 0 50px;
+    text-transform: uppercase;
+    color: $color-brown;
+    .bottom{
+        font-size: 60px;
+    }
+}
+.btnButtonAdd{
+    padding: 20px 0 40px;
+    #btnThemSinhVien{
+        border-radius: $radius-0;
+        background-color: $color-green;
+        border: 1px solid $color-green;
+    }
+}

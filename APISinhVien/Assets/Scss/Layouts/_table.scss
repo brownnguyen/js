@@ -1,0 +1,35 @@
+.tableCourse{
+    .table{
+        thead{
+            background-color: $color-green-1;
+            border: 1px solid $color-green-1;
+            tr{
+                th{
+                    text-align: center;
+                    font-weight: lighter;
+                    color: white;
+                    text-transform: uppercase;
+                    border-radius: $radius-0;
+                    border-bottom: 0;
+                }
+            }
+        }
+        tbody{
+            text-align: center;
+            border: 1px solid #dee2e6;
+            .btn__Repair{
+                border: 1px solid transparent;
+                border-radius: $radius-0;
+                background-color: $color-blue;
+                color: $color-white;
+            }
+            .btn__Delete{
+                border:1px solid transparent;
+                border-radius: $radius-0;
+                background-color: $color-brown-1;
+                color: $color-white;
+            }
+        }
+        
+    }
+}

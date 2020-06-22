@@ -1,0 +1,14 @@
+footer{
+    margin-top: 80px;
+    background-color: $color-green-1;
+    .footer__content{
+        padding: 50px 0 ;
+        h5{
+            color: $color-white;
+            font-size: 12px;
+            margin-bottom: 0;
+            font-weight: lighter;
+        }
+       
+    }
+}

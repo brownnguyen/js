@@ -1,0 +1,112 @@
+html, body {
+  font-family: 'Inter', sans-serif; }
+
+button {
+  box-shadow: none !important; }
+
+input {
+  border-radius: 0 !important;
+  box-shadow: none !important; }
+
+.ErrorClass {
+  border: 1px solid red; }
+
+.Er {
+  font-size: 12px;
+  color: red; }
+
+#modalSinhVien .modal-header {
+  background-color: #6ab187; }
+  #modalSinhVien .modal-header .modal-title {
+    color: white; }
+#modalSinhVien .modal-footer .btn__Add {
+  border-radius: 0;
+  background-color: #336b87;
+  color: white; }
+#modalSinhVien .modal-footer .btn__Close {
+  background-color: #8f9da0;
+  color: white;
+  border-radius: 0; }
+#modalSinhVien .modal-footer .btn__Update {
+  background-color: #5bc8ac;
+  border-radius: 0;
+  color: white; }
+
+.header__content {
+  background-color: #6ab187; }
+  .header__content .navbar-brand {
+    padding-left: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white; }
+  .header__content .search__form .search__input {
+    border-radius: 0;
+    border: 1px solid transparent; }
+    .header__content .search__form .search__input:focus {
+      border: 1px solid transparent; }
+  .header__content .search__form .search__button {
+    border-radius: 0;
+    color: #4f6457;
+    border: 1px solid #4f6457; }
+    .header__content .search__form .search__button:hover {
+      color: white;
+      background-color: #4f6457; }
+  .header__content .navbar-nav {
+    padding-right: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around; }
+    .header__content .navbar-nav .nav-item .nav-link {
+      color: white;
+      text-transform: uppercase; }
+
+.topTitle {
+  padding: 100px 0 50px;
+  text-transform: uppercase;
+  color: #4f6457; }
+  .topTitle .bottom {
+    font-size: 60px; }
+
+.btnButtonAdd {
+  padding: 20px 0 40px; }
+  .btnButtonAdd #btnThemSinhVien {
+    border-radius: 0;
+    background-color: #336b87;
+    border: 1px solid #336b87; }
+
+.tableCourse .table thead {
+  background-color: #6ab187;
+  border: 1px solid #6ab187; }
+  .tableCourse .table thead tr th {
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0;
+    border-bottom: 0; }
+.tableCourse .table tbody {
+  text-align: center;
+  border: 1px solid #dee2e6; }
+  .tableCourse .table tbody .btn__Repair {
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: #20948b;
+    color: white; }
+  .tableCourse .table tbody .btn__Delete {
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: #a43820;
+    color: white; }
+
+footer {
+  margin-top: 80px;
+  background-color: #6ab187; }
+  footer .footer__content {
+    padding: 50px 0; }
+    footer .footer__content h5 {
+      color: white;
+      font-size: 12px;
+      margin-bottom: 0;
+      font-weight: lighter; }
+
+/*# sourceMappingURL=style.css.map */

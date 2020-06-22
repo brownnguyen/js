@@ -1,0 +1,25 @@
+#modalSinhVien{
+    .modal-header{
+        background-color: $color-green-1;
+        .modal-title{
+            color: $color-white;
+        }
+    }
+    .modal-footer{
+        .btn__Add{
+            border-radius: $radius-0;
+            background-color: $color-green;
+            color: $color-white;
+        }
+        .btn__Close{
+            background-color: $color-grey;
+            color: $color-white;
+            border-radius: $radius-0;
+        }
+        .btn__Update{
+            background-color: $color-green-2;
+            border-radius: $radius-0;
+            color: $color-white;
+        }
+    }
+}

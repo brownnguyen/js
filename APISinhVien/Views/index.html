@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Assets/Style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg header__content">
+            <a class="navbar-brand" href="#">CyberSoft Academy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 search__form">
+                    <input class="form-control mr-sm-2 search__input" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 search__button" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Top Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="topTitle">
+        <div class="row container mx-auto">
+            <h2 class="text-center col-12 top">Thực hành javascript</h2>
+            <h1 class="text-center col-12 bottom">Quản lý sinh viên</h1>
+        </div>
+    </section>
+    <div class="container row btnButtonAdd mx-auto">
+        <button type="button" class="btn btn-primary" id='btnThemSinhVien' data-toggle="modal"
+            data-target="#modalSinhVien">
+            Thêm sinh viên
+        </button>
+    </div>
+    <div class="row mx-3 tableCourse">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mã</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Số Điện Thoại</th>
+                    <th>CMND</th>
+                    <th>Điểm Toán</th>
+                    <th>Điểm Lý</th>
+                    <th>Điểm Hóa</th>
+                    <th>Điểm trung bình</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tblSinhVien">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="modalSinhVien" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="">Mã Sinh Viên</label>
+                                <input id='MaSV' type="text" class=form-control>
+                                <div class="Er erMaSV"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Họ Tên</label>
+                                <input id='HoTen' type="text" class=form-control>
+                                <div class="Er erHoTen"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input id='Email' type="text" class=form-control>
+                                <div class="Er erEmail"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Số điện thoại</label>
+                                <input id='SoDT' type="text" class=form-control>
+                                <div class="Er erSoDT"></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="">CMND</label>
+                                <input id='CMND' type="text" class=form-control>
+                                <div class="Er erCMND"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Điểm Toán</label>
+                                <input id='DiemToan' type="text" class=form-control>
+                                <div class="Er erDiemToan"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Điểm Lý</label>
+                                <input id='DiemLy' type="text" class=form-control>
+                                <div class="Er erDiemLy"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Điểm Hóa</label>
+                                <input id='DiemHoa' type="text" class=form-control>
+                                <div class="Er erDiemHoa"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__content">
+            <h5 class="text-center">BUILDING YOUR SITE WITH LOTS OF FUN</h5>
+        </div>
+    </footer>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--Thu vien ket noi backend-->
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src='../App/Common/Validation.js'></script>
+    <script src='../App/Models/SinhVien.js'></script>
+    <script src='../App/Services/ManageSinhVien.js'></script>
+    <!--Link file index.js, dùng index.js để điều hướng giao diện này (index.html) -->
+    <script src="../App/Controllers/index.js"></script>
+</body>
+
+</html>
